@@ -1,0 +1,67 @@
+{
+  "direct_dep_identities": [
+    "messagekit"
+  ],
+  "modules": [
+    {
+      "name": "InputBarAccessoryView",
+      "c99name": "InputBarAccessoryView",
+      "src_type": "swift",
+      "label": "@swiftpkg_inputbaraccessoryview//:Sources_InputBarAccessoryView",
+      "modulemap_label": "@swiftpkg_inputbaraccessoryview//:Sources_InputBarAccessoryView_modulemap",
+      "package_identity": "inputbaraccessoryview",
+      "product_memberships": [
+        "InputBarAccessoryView"
+      ]
+    },
+    {
+      "name": "MessageKit",
+      "c99name": "MessageKit",
+      "src_type": "swift",
+      "label": "@swiftpkg_messagekit//:Sources_MessageKit",
+      "modulemap_label": "@swiftpkg_messagekit//:Sources_MessageKit_modulemap",
+      "package_identity": "messagekit",
+      "product_memberships": [
+        "MessageKit"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "identity": "inputbaraccessoryview",
+      "name": "InputBarAccessoryView",
+      "type": "library",
+      "target_labels": [
+        "@swiftpkg_inputbaraccessoryview//:Sources_InputBarAccessoryView"
+      ]
+    },
+    {
+      "identity": "messagekit",
+      "name": "MessageKit",
+      "type": "library",
+      "target_labels": [
+        "@swiftpkg_messagekit//:Sources_MessageKit"
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "name": "swiftpkg_inputbaraccessoryview",
+      "identity": "inputbaraccessoryview",
+      "remote": {
+        "commit": "2843b4454cfb6de5b4d1e5939fef2dd6257b69ee",
+        "remote": "https://github.com/nathantannar4/InputBarAccessoryView",
+        "version": "5.5.0"
+      }
+    },
+    {
+      "name": "swiftpkg_messagekit",
+      "identity": "messagekit",
+      "remote": {
+        "commit": "84236d91ac5783e3ecbefc15b82d854476720115",
+        "remote": "https://github.com/MessageKit/MessageKit",
+        "version": "3.8.0"
+      }
+    }
+  ]
+}
